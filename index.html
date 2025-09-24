@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Company Profile</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="nav">
+    <div class="container nav__inner">
+      <div class="logo">MyCompany</div>
+      <ul class="nav__links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#profile">Our Profile</a></li>
+        <li><a href="#message">Message Us</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero / Photo Banner -->
+  <header id="home" class="hero" role="banner" aria-label="Photo banner">
+    <div class="container hero__content">
+      <h1 id="welcome">Hi, Welcome To Website</h1>
+      <p>We build great products that make life easier.</p>
+      <a class="btn" href="#profile">Learn more</a>
+    </div>
+  </header>
+
+  <!-- About + Vision & Mission -->
+  <main>
+    <section id="about" class="section">
+      <div class="container">
+        <h2>About the Company</h2>
+        <p>
+          MyCompany is a fictional company for your CodingCamp assignment. Replace this text with a real description:
+          who you are, what you do, and why customers love you.
+        </p>
+      </div>
+    </section>
+
+    <section id="vision" class="section section--alt">
+      <div class="container grid-2">
+        <div>
+          <h3>Vision</h3>
+          <p>
+            Become a trusted partner that delivers impactful technology for everyone.
+          </p>
+        </div>
+        <div>
+          <h3>Mission</h3>
+          <ul>
+            <li>Build useful, accessible products.</li>
+            <li>Focus on customer success.</li>
+            <li>Innovate responsibly and sustainably.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Our Profile (can be its own page/section per instructions) -->
+    <section id="profile" class="section">
+      <div class="container">
+        <h2>Our Profile</h2>
+        <p>
+          Write a complete profile here: company history, team overview, services, achievements, or anything your
+          instructor expects. Images/logos are welcome.
+        </p>
+
+        <h3>Our Headquarter</h3>
+        <div class="hq">
+          <div class="hq__item">
+            <div class="hq__dot" aria-hidden="true"></div>
+            <p>Jakarta</p>
+          </div>
+          <div class="hq__item">
+            <div class="hq__dot" aria-hidden="true"></div>
+            <p>Bandung</p>
+          </div>
+          <div class="hq__item">
+            <div class="hq__dot" aria-hidden="true"></div>
+            <p>Surabaya</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Message Us -->
+    <section id="message" class="section section--alt">
+      <div class="container grid-2 gap-lg">
+        <form id="contactForm" novalidate class="card">
+          <h2>Message Us</h2>
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" placeholder="Your full name" required />
+
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" placeholder="you@email.com" required />
+
+          <label for="phone">Phone Number</label>
+          <input id="phone" name="phone" type="tel" placeholder="08xxxxxxxxxx" required />
+
+          <label for="msg">Message</label>
+          <textarea id="msg" name="msg" placeholder="Your message..." required></textarea>
+
+          <button type="submit" class="btn">Submit</button>
+          <p id="formError" class="error" aria-live="polite"></p>
+        </form>
+
+        <aside class="card" aria-live="polite">
+          <h2>Last Submission</h2>
+          <div id="output">
+            <em>No message yet. Submit the form to see results here.</em>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <small>© <span id="year"></span> MyCompany — Built for CodingCamp</small>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
